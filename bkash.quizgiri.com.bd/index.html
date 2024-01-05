@@ -1,0 +1,385 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Quizgiri landing page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://bkash.quizgiri.com.bd/css/app.css">
+</head>
+
+<body>
+    <div class="">
+        <!-- Start nav -->
+        <div class="bg-light shadow">
+            <div class="container-fluid justify-content-center">
+                <section class="main-navbar py-3 mb-3 d-flex justify-content-between align-items-center">
+                    <div class="logo">
+                        <a href="#"><img src="https://bkash.quizgiri.com.bd/img/logo.png" alt="Shera logo"></a>
+                    </div>
+
+                    <div class="d-flex gap-5">
+                        <div class="mr-2">
+                            <a href="https://unsubscription.nagorik.tech/" class="btn btn-sm primary-bg-color rounded-lg text-white"><b>আনসাবস্ক্রাইব করুন!</b></a>
+                        </div>
+                        <div>
+                            <a href="buy-pack/1025" class="btn btn-sm primary-bg-color rounded-lg text-white"><b>সাবস্ক্রাইব করুন!</b></a>
+                        </div>
+                    </div>
+
+                </section>
+            </div>
+        </div>
+        <!-- End nav -->
+
+        <!-- Start content -->
+        <div class="container-fluid justify-content-center">
+            <!-- Main slider start -->
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                <div class="carousel-inner">
+                    <div class="carousel-item shadow active">
+                        <img src="https://bkash.quizgiri.com.bd/img/new_banner.jpg" class="d-block w-100 sliderImage" alt="কুইজ খেলুন">
+                    </div>
+                </div>
+            </div>
+            <div class="btn-play d-flex justify-content-center">
+                <a href="#" class="btn btn-lg primary-bg-color text-white position-absolute shadow rounded-pill" type="button" data-toggle="modal" data-target="#exampleModal" style="font-family: Arial"><b>কুইজ খেলুন
+                    &nbsp; &nbsp; <i class="bi bi-arrow-right"></i></b></a>
+            </div>
+
+            <!-- Main slider end -->
+
+            <!-- Start modal -->
+            <div class="modal fade justify-content-center" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" style="">
+                <div class="modal-dialog modal-dialog-centered  align-items-center">
+                    <div class="modal-content" style="margin-left: 10px;margin-right: 10px;">
+                        <div class="modal-body p-0" id="app">
+                            <Quiz/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End of modal -->
+
+            <!-- Start prize list -->
+            <br>
+            <br>
+            <div class="prize-list">
+                <div class="prize-list-header" style="font-family: Arial">
+                    <h4 class="text-dark-color mb-0">প্রাইজ লিস্ট</h4>
+                    <p class="text-light-color ">সর্বোমোট ১০০+</p>
+                </div>
+                <div class="owl-carousel" id="prize-carousel">
+                    <div class="prize-list-item">
+                        <img src="https://bkash.quizgiri.com.bd/img/prize-1.png" alt="">
+                    </div>
+                    <div class="prize-list-item">
+                        <img src="https://bkash.quizgiri.com.bd/img/prize-2.png" alt="">
+                    </div>
+                    <div class="prize-list-item">
+                        <img src="https://bkash.quizgiri.com.bd/img/prize-3.png" alt="">
+                    </div>
+                    <div class="prize-list-item">
+                        <img src="https://bkash.quizgiri.com.bd/img/prize-4.png" alt="">
+                    </div>
+                    <div class="prize-list-item">
+                        <img src="https://bkash.quizgiri.com.bd/img/prize-5.png" alt="">
+                    </div>
+                    <div class="prize-list-item">
+                        <img src="https://bkash.quizgiri.com.bd/img/prize-6.png" alt="">
+                    </div>
+                    <div class="prize-list-item">
+                        <img src="https://bkash.quizgiri.com.bd/img/prize-7.png" alt="">
+                    </div>
+                </div>
+
+            </div>
+            <!-- End of prize list -->
+
+            <!-- Start leaderboard -->
+            <br>
+            <div class="leaderboard mb-4">
+                <div class="leaderboard-header" style="font-family: Arial">
+                    <h4 class="text-dark-color mb-0">কুইজ বিজয়ী</h4>
+                    <p class="text-light-color">গত সপ্তাহের</p>
+                </div>
+                <div class="leaderboard-body bg-light pt-4">
+                    <div class="leaderboard-body-top">
+                        <div class="leaderboard-body-top-item">
+                            <img class=" rounded-circle" src="https://quizgiri.s3.ap-south-1.amazonaws.com/p/avatars/1704305510.jpg" alt="">
+                            <h5 class="font-weight-bold mt-2 mb-1">2</h5>
+                            <span>Jannatul</span>
+                            <br>
+                            <a href="#" class="btn btn-sm rounded-pill">5095</a>
+                        </div>
+
+                        <div class="leaderboard-body-top-item">
+                            <img class="rounded-circle" src="https://quizgiri.s3.ap-south-1.amazonaws.com/p/avatars/1704100697.jpg" alt="">
+                            <h5 class="font-weight-bold mt-2 mb-1">1</h5>
+                            <span>Imran</span>
+                            <br>
+                            <a href="#" class="btn btn-sm rounded-pill">12005</a>
+                        </div>
+                        <div class="leaderboard-body-top-item">
+                            <img class="rounded-circle" src="https://quizgiri.s3.ap-south-1.amazonaws.com/p/avatars/default.png" alt="">
+                            <h5 class="font-weight-bold mt-2 mb-1">3</h5>
+                            <span>SHIMANUL</span>
+                            <br>
+                            <a href="#" class="btn btn-sm rounded-pill">3270</a>
+                        </div>
+                    </div>
+                    <div class="leaderboard-body-bottom mt-4">
+                        <ul class="py-0 px-4">
+
+                            <li class="border-bottom py-2">
+                                <span class="text-light-color">
+                            <b>4</b> &nbsp; <img class=" rounded-circle"
+                                                                                  src="https://quizgiri.s3.ap-south-1.amazonaws.com/p/avatars/default.png"
+                                                                                  alt="">
+                            &nbsp; showaib Siddique
+                        </span>
+                                <span class="font-weight-bold text-light-color">2445</span>
+                            </li>
+                            <li class="border-bottom py-2">
+                                <span class="text-light-color">
+                            <b>5</b> &nbsp; <img class=" rounded-circle"
+                                                                                  src="https://quizgiri.s3.ap-south-1.amazonaws.com/p/avatars/default.png"
+                                                                                  alt="">
+                            &nbsp; Sunjida pritu
+                        </span>
+                                <span class="font-weight-bold text-light-color">1640</span>
+                            </li>
+                            <li class="border-bottom py-2">
+                                <span class="text-light-color">
+                            <b>6</b> &nbsp; <img class=" rounded-circle"
+                                                                                  src="https://quizgiri.s3.ap-south-1.amazonaws.com/p/avatars/1704397113.jpg"
+                                                                                  alt="">
+                            &nbsp; Md Sojib Hasan Jiku
+                        </span>
+                                <span class="font-weight-bold text-light-color">1455</span>
+                            </li>
+                            <li class="border-bottom py-2">
+                                <span class="text-light-color">
+                            <b>7</b> &nbsp; <img class=" rounded-circle"
+                                                                                  src="https://quizgiri.s3.ap-south-1.amazonaws.com/p/avatars/default.png"
+                                                                                  alt="">
+                            &nbsp; Habibur Rahman
+                        </span>
+                                <span class="font-weight-bold text-light-color">1270</span>
+                            </li>
+                            <li class="border-bottom py-2">
+                                <span class="text-light-color">
+                            <b>8</b> &nbsp; <img class=" rounded-circle"
+                                                                                  src="https://quizgiri.s3.ap-south-1.amazonaws.com/p/avatars/default.png"
+                                                                                  alt="">
+                            &nbsp; Md Almus Hossain
+                        </span>
+                                <span class="font-weight-bold text-light-color">1200</span>
+                            </li>
+                            <li class="border-bottom py-2">
+                                <span class="text-light-color">
+                            <b>9</b> &nbsp; <img class=" rounded-circle"
+                                                                                  src="https://quizgiri.s3.ap-south-1.amazonaws.com/p/avatars/default.png"
+                                                                                  alt="">
+                            &nbsp; jishan
+                        </span>
+                                <span class="font-weight-bold text-light-color">1155</span>
+                            </li>
+                            <li class="border-bottom py-2">
+                                <span class="text-light-color">
+                            <b>10</b> &nbsp; <img class=" rounded-circle"
+                                                                                  src="https://quizgiri.s3.ap-south-1.amazonaws.com/p/avatars/default.png"
+                                                                                  alt="">
+                            &nbsp; Saba Rahman
+                        </span>
+                                <span class="font-weight-bold text-light-color">1145</span>
+                            </li>
+                            <li class="border-bottom py-2">
+                                <span class="text-light-color">
+                            <b>11</b> &nbsp; <img class=" rounded-circle"
+                                                                                  src="https://quizgiri.s3.ap-south-1.amazonaws.com/p/avatars/default.png"
+                                                                                  alt="">
+                            &nbsp; name
+                        </span>
+                                <span class="font-weight-bold text-light-color">855</span>
+                            </li>
+                            <li class="border-bottom py-2">
+                                <span class="text-light-color">
+                            <b>12</b> &nbsp; <img class=" rounded-circle"
+                                                                                  src="https://quizgiri.s3.ap-south-1.amazonaws.com/p/avatars/1609757431.jpg"
+                                                                                  alt="">
+                            &nbsp; Fatema Amzad
+                        </span>
+                                <span class="font-weight-bold text-light-color">835</span>
+                            </li>
+                            <li class="border-bottom py-2">
+                                <span class="text-light-color">
+                            <b>13</b> &nbsp; <img class=" rounded-circle"
+                                                                                  src="https://quizgiri.s3.ap-south-1.amazonaws.com/p/avatars/default.png"
+                                                                                  alt="">
+                            &nbsp; mamun
+                        </span>
+                                <span class="font-weight-bold text-light-color">800</span>
+                            </li>
+                            <li class="border-bottom py-2">
+                                <span class="text-light-color">
+                            <b>14</b> &nbsp; <img class=" rounded-circle"
+                                                                                  src="https://quizgiri.s3.ap-south-1.amazonaws.com/p/avatars/default.png"
+                                                                                  alt="">
+                            &nbsp; name
+                        </span>
+                                <span class="font-weight-bold text-light-color">770</span>
+                            </li>
+                            <li class="border-bottom py-2">
+                                <span class="text-light-color">
+                            <b>15</b> &nbsp; <img class=" rounded-circle"
+                                                                                  src="https://quizgiri.s3.ap-south-1.amazonaws.com/p/avatars/default.png"
+                                                                                  alt="">
+                            &nbsp; Muzban Tahir
+                        </span>
+                                <span class="font-weight-bold text-light-color">740</span>
+                            </li>
+                            <li class="border-bottom py-2">
+                                <span class="text-light-color">
+                            <b>16</b> &nbsp; <img class=" rounded-circle"
+                                                                                  src="https://quizgiri.s3.ap-south-1.amazonaws.com/p/avatars/default.png"
+                                                                                  alt="">
+                            &nbsp; Sorna Ahmed
+                        </span>
+                                <span class="font-weight-bold text-light-color">730</span>
+                            </li>
+                            <li class="border-bottom py-2">
+                                <span class="text-light-color">
+                            <b>17</b> &nbsp; <img class=" rounded-circle"
+                                                                                  src="https://quizgiri.s3.ap-south-1.amazonaws.com/p/avatars/default.png"
+                                                                                  alt="">
+                            &nbsp; Laboni
+                        </span>
+                                <span class="font-weight-bold text-light-color">725</span>
+                            </li>
+                            <li class="border-bottom py-2">
+                                <span class="text-light-color">
+                            <b>18</b> &nbsp; <img class=" rounded-circle"
+                                                                                  src="https://quizgiri.s3.ap-south-1.amazonaws.com/p/avatars/default.png"
+                                                                                  alt="">
+                            &nbsp; rana miha
+                        </span>
+                                <span class="font-weight-bold text-light-color">695</span>
+                            </li>
+                            <li class="border-bottom py-2">
+                                <span class="text-light-color">
+                            <b>19</b> &nbsp; <img class=" rounded-circle"
+                                                                                  src="https://quizgiri.s3.ap-south-1.amazonaws.com/p/avatars/default.png"
+                                                                                  alt="">
+                            &nbsp; name
+                        </span>
+                                <span class="font-weight-bold text-light-color">680</span>
+                            </li>
+                            <li class="border-bottom py-2">
+                                <span class="text-light-color">
+                            <b>20</b> &nbsp; <img class=" rounded-circle"
+                                                                                  src="https://quizgiri.s3.ap-south-1.amazonaws.com/p/avatars/default.png"
+                                                                                  alt="">
+                            &nbsp; Saraban Tahura
+                        </span>
+                                <span class="font-weight-bold text-light-color">670</span>
+                            </li>
+                            <li class="border-bottom py-2">
+                                <span class="text-light-color">
+                            <b>21</b> &nbsp; <img class=" rounded-circle"
+                                                                                  src="https://quizgiri.s3.ap-south-1.amazonaws.com/p/avatars/default.png"
+                                                                                  alt="">
+                            &nbsp; name
+                        </span>
+                                <span class="font-weight-bold text-light-color">630</span>
+                            </li>
+                            <li class="border-bottom py-2">
+                                <span class="text-light-color">
+                            <b>22</b> &nbsp; <img class=" rounded-circle"
+                                                                                  src="https://quizgiri.s3.ap-south-1.amazonaws.com/p/avatars/default.png"
+                                                                                  alt="">
+                            &nbsp; Shuvo
+                        </span>
+                                <span class="font-weight-bold text-light-color">625</span>
+                            </li>
+                            <li class="border-bottom py-2">
+                                <span class="text-light-color">
+                            <b>23</b> &nbsp; <img class=" rounded-circle"
+                                                                                  src="https://quizgiri.s3.ap-south-1.amazonaws.com/p/avatars/default.png"
+                                                                                  alt="">
+                            &nbsp; Nila Rahman
+                        </span>
+                                <span class="font-weight-bold text-light-color">610</span>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class=" leaderboard-body footer-body bg-light pt-2 mb-2 pb-2" style="">
+
+                <div class="logo">
+                    <a href="#"><img style="display: block;
+  margin-left: auto;
+  margin-right: auto;" src="https://bkash.quizgiri.com.bd/img/logo.png" alt="Shera logo"></a>
+                </div>
+                <p class="mt-2 mb-0" style="text-align: center">কুইজ খেলতে ডাউনলোড করুন মোবাইল অ্যাপ</p>
+
+                <ul class="footer-list-group d-grid footer-list-group text-center px-0">
+                    <a href="https://play.google.com/store/apps/details?id=com.einstechstudio.quiz&hl=en&gl=US"><img class="footer-list-item text-decoration-none mr-2" style="width: 100px;height: 34px" src="https://bkash.quizgiri.com.bd/img/playStore.png" alt="Shera logo"></a>
+                    <a href="https://apps.apple.com/us/app/quizgiri/id1536870159"><img class="footer-list-item text-decoration-none mr-2" style="width: 100px; height: 40px" src="https://bkash.quizgiri.com.bd/img/appStore.png" alt="Shera logo"></a>
+
+                </ul>
+
+                <hr>
+                <div style="display: flex;flex-direction:column;justify-content: center;align-items: center;gap:6px;font-weight: 600;">
+                    <span>For any queries reach out to us </span>
+                    <span><a href="tel:09638-009003">@09638-009003</a></span>
+                </div>
+                <hr>
+
+                <ul class="footer-list-group d-grid footer-list-group text-center mb-0 px-0">
+                    <a href="https://www.facebook.com/QuizGiriofficial/"><img class="footer-list-item text-decoration-none mr-3" style="height: 25px;width: 25px" src="https://bkash.quizgiri.com.bd/img/fb.png" alt="Facebook"></a>
+                    <a href="https://www.facebook.com/messages/t/113529796751053"><img class="footer-list-item text-decoration-none mr-3 ml-3" style="height: 25px;width: 25px" src="https://bkash.quizgiri.com.bd/img/messenger.png" alt="Messenger"></a>
+                    <a href="https://www.instagram.com/quizgiri/"><img class="footer-list-item text-decoration-none mr-3 ml-3" style="height: 25px;width: 25px" src="https://bkash.quizgiri.com.bd/img/instagram.png" alt="Instagram"></a>
+                    <a href="https://quizgiri.xyz/privacy-policy.html"><img class="footer-list-item text-decoration-none mr-3 ml-3" style="height: 25px;width: 25px" src="https://bkash.quizgiri.com.bd/img/pp.png" alt="Privacy Policy"></a>
+                    <a href="https://quizgiri.xyz/faq.html"><img class="footer-list-item text-decoration-none ml-3" style="height: 25px;width: 25px" src="https://bkash.quizgiri.com.bd/img/qa.png" alt="FAQ"></a>
+                </ul>
+            </div>
+
+
+
+            <!-- End of leaderboard -->
+        </div>
+
+
+
+        <!-- End content -->
+
+        <!-- Start footer -->
+        <!-- End footer -->
+    </div>
+    <script src="https://bkash.quizgiri.com.bd/home/home.js" type="text/javascript"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            var owl = $("#prize-carousel");
+            owl.owlCarousel({
+                autoplay: true,
+                loop: true,
+                // nav: false,
+                dot: false,
+                autoplayTimeout: 2000,
+                autoplayHoverPause: true,
+                items: 4,
+            });
+        });
+    </script>
+</body>
+
+</html>
